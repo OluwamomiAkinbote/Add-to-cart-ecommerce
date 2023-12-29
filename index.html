@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sopping chart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Maxonex</h2>
+
+      <div class="search-form">
+        <input type="search" class="search-box" placeholder="Search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+
+      <nav class="nav-bar">
+        <a href="#home">home</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <a href="" class="fas fa-bars" id="menu-btn"></a>
+        <a href="#cart-page" class="fas fa-shopping-cart" id="cart-btn">
+          <span class="quantity-pop">0</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- home section starts here -->
+    <section id="home">
+      <div class="content">
+        <h3>Complete Your Look with Trendy <span>Accessories</span></h3>
+        <p>
+          Explore trendy clothing & stylish shoes. From elegant dresses to
+          comfortable jeans, find the perfect outfits for any occasion. Pair
+          them with eye-catching heels or trendy sneakers for a complete look.
+          Step into the world of fashion possibilities with us.
+        </p>
+        <button class="btn">Shop Now</button>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- Sidebar container -->
+    <aside id="sidebar">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+      <div id="total-price">Total Price: $0.00</div>
+    </aside>
+
+    <!-- products section start here -->
+    <section class="products" id="products">
+      <h1 class="heading">our <span>products</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/img-12.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>men's shirt</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+              provident minus reiciendis
+            </p>
+
+            <div class="price">$12.99 <span>20.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-2.webp" alt="" />
+          </div>
+          <div class="content">
+            <h3>anti-blue glass</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$12.99 <span>20.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-3.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>sneaker for joggers</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$12.99 <span>20.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-12.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>long sleeve for men</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$12.99 <span>20.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-5.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>converse shoe</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$4 <span>8.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-6.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>anti-blue glass</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$2.99 <span>5.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-7.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>anti-blue glass</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$3.99 <span>8.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-8.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>long sleeve for men</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$12.99 <span>15.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-9.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>5-in-1 long sleeve</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$20.99 <span>35.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-16.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>men easy wear</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$12.99 <span>20.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-13.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>the brat army</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$29.99 <span>35.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/img-15.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>oxford clarks</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+              unde corporis dolores beatae qui optio ea?
+            </p>
+            <div class="price">$30.99 <span>35.00</span></div>
+          </div>
+          <a href="#" class="add-to-cart">add to cart</a>
+        </div>
+      </div>
+      <p class="no-results-message">
+        Oops! No toy found. Try searching for something else!
+      </p>
+    </section>
+
+    <!-- product section ends here -->
+
+    <!--------review section starts here-->
+
+    <section class="review" id="review">
+      <h1 class="heading">customer's <span>review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="rev1.jpg" alt="" class="user" />
+          </div>
+          <div class="content">
+            <h3>John Doe</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis at deserunt repellendus voluptatibus, dolorem
+              suscipit delectus excepturi minima repudiandae! Tempore cum
+              maiores ratione .
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="rev2.jpg" alt="" class="user" />
+          </div>
+          <div class="content">
+            <h3>Mike Steve</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis at deserunt repellendus voluptatibus, dolorem
+              suscipit delectus excepturi minima repudiandae! Tempore cum
+              maiores ratione .
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="rev3.jpg" alt="" class="user" />
+          </div>
+          <div class="content">
+            <h3>Sarah Johnson</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis at deserunt repellendus voluptatibus, dolorem
+              suscipit delectus excepturi minima repudiandae! Tempore cum
+              maiores ratione .
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- newsletter section starts here -->
+    <section class="newsletter">
+      <div class="content">
+        <h3>monthly newsletter</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          dolorem fuga quisquam ea quaerat odit earum numquam sapiente ipsum
+          commodi tenetur minima, officia, laudantium, nulla cupiditate dolores
+          perspiciatis ad molestiae!
+        </p>
+        <form action="">
+          <input type="email" class="box" placeholder="enter your email..." />
+          <input type="submit" class="btn" value="send" />
+        </form>
+      </div>
+    </section>
+    <!-- news letter section ends here -->
+    <!-- footer section -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>our stores</h3>
+          <a href="#">nigera</a>
+          <a href="#">usa</a>
+          <a href="#">canada</a>
+          <a href="#">india</a>
+          <a href="#">dubai</a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">products</a>
+          <a href="#">reviews</a>
+          <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedIn</a>
+        </div>
+
+        <div class="credit">
+          created by <span>Maxonex</span> | all right reserved
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

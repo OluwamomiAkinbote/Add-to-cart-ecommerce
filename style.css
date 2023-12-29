@@ -1,0 +1,482 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #800000;
+  --text-color: #fff6d1;
+  --bg: #b38600;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #800000;
+}
+
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.heading span {
+  color: #ffd700;
+  text-decoration: underline;
+}
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+  border: 0.2rem solid #b38600;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  color: #ccc;
+  cursor: pointer;
+  background-color: #ff6600;
+  padding: 0.8rem 3rem;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.no-results-message {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+section {
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+header {
+  background: var(--bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  text-transform: capitalize;
+  box-shadow: 5px 0 5px rgba(255, 255, 255, 0.8);
+}
+
+header .logo {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: bolder;
+}
+
+header .search-form {
+  background: #fff;
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+header .search-form input {
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 0.8rem;
+  text-transform: none;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+header .search-form label {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: var(--black);
+}
+
+.nav-bar a {
+  padding-left: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-bar a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+
+.icons {
+  position: relative;
+}
+
+.icons a {
+  color: #000;
+  position: relative;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.quantity-pop {
+  background-color: red;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+#home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Bg-image/pexels-terje-sollie-298863.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#home .content {
+  margin: 200px auto 0;
+  max-width: 80rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .content h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+#home .content h3 span {
+  color: #b38600;
+}
+
+#home .content p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #aaa;
+  text-align: left;
+  line-height: 1.5;
+}
+
+#menu-btn {
+  display: none;
+}
+
+/* Sidebar container styles */
+#sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.show-sidebar {
+  display: block;
+}
+
+#sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.cart-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  gap: 0.5rem;
+}
+
+.cart-item-quantity button {
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-item-quantity .quantity {
+  font-weight: 600;
+}
+
+.cart-item-price {
+  font-size: 14px;
+  color: #555;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.delete-btn i {
+  color: red;
+}
+
+#total-price {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* CSS styling for the products section */
+.products {
+  text-align: center;
+}
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+.products .box {
+  padding: 20px;
+  background-color: #90ee90;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.products .box:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  transform: scale(0.99);
+  transition: transform 0.5s ease;
+}
+
+.products .box .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.products .box .content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+.products .box .content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.products .box .price {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.products .box .price span {
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.products .box .add-to-cart {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.products .box .add-to-cart:hover {
+  background-color: #ff3300;
+}
+.review {
+  margin-top: 1rem;
+}
+.review .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  flex: 1 1 20rem;
+  text-align: center;
+  padding: 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  /* margin-right: 1rem; */
+}
+
+.review .box-container .box .image img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.review .box-container .box p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.review .box-container .box .stars i {
+  font-size: 1.5rem;
+  color: var(--bg);
+}
+.newsletter {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.newsletter .content {
+  text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.newsletter .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.newsletter .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  margin: 1rem auto;
+  max-width: 60rem;
+}
+.newsletter .content form {
+  margin: 1rem auto;
+  max-width: 50rem;
+  display: flex;
+}
+.newsletter .content form .box {
+  width: 100%;
+  font-size: 1.7rem;
+  color: #b38600;
+  padding: 1rem;
+  border: 0.2rem solid #b38600;
+  border-right: none;
+  background-color: transparent;
+  outline: none;
+  margin-top: 1rem;
+}
+.newsletter .content form .btn {
+  border-radius: 0;
+}
+.footer .box-container {
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer .box-container .box {
+  flex: 1 1 20rem;
+}
+.footer .box-container .box h3 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer .box-container .box a {
+  color: #aaa;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.footer .box-container .box a:hover {
+  color: #ff6600;
+}
+
+.footer .box-container .credit {
+  text-align: center;
+  width: 100%;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  color: #ccc;
+}
+
+.footer .box-container .credit span {
+  color: #b38600;
+  font-weight: bolder;
+}
